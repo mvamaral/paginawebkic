@@ -1,0 +1,106 @@
+/* ---- este é o sistema de Escalas para o visual do site, sempre vai estar descrito no CSS "obs: geralmente vem do setor ou alguém que desenvolva o Disign pronto"  ------ */
+/* Sistema de tamanhos - https://typescale.com/
+Fontes - Minor Third - 1.200 - Em PX
+4.4 - 5.4 - 6.4 - 7.7 - 9.2 - 11.1 - 13.3 - 16 - 19.2 - 23 - 27.6 - 33.2 - 39.8 - 47.8 - 57.3 - 68.8 - 82.6
+
+Espaçamentos - Major Third - 1.250 - Em PX
+2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16 - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #404040;
+  background-color: #f4f5f7;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.menu-icone {
+  width: 10rem;
+}
+
+.div-sub {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.menu-principal {
+  display: flex;
+
+  gap: 2rem;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.banner-box {
+  width: 50rem;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  box-shadow: 0 0 0.6rem 0.2rem rgb(0, 0, 0, 0.15);
+  border-radius: 1.5rem;
+}
+
+.banner-box img {
+  width: 100%;
+}
+
+.botao-inscricao {
+  text-align: center;
+  font-size: 1.92rem;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #94aebc, #c5cacf);
+  border-right-color: #404040;
+  border-right: solid 0.3rem;
+  border-bottom: solid 0.3rem;
+  border-radius: 1rem;
+  padding: 0.52rem 2.1rem;
+}
+
+.botao-ativo:hover,
+.botao-ativo:active {
+  border: solid 0.2rem #404040;
+  background-image: none;
+  background-color: #404040;
+  color: #94aebc;
+}
+
+.svg-redessociais:hover svg,
+.svg-redessociais:active svg,
+.contatos:hover svg,
+.contatos:active svg {
+  /* para mudar a cor svg usa essas propriedades */
+  fill: #94aebc;
+  stroke: #94aebc;
+}
