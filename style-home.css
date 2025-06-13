@@ -1,0 +1,148 @@
+/* ---- este é o sistema de Escalas para o visual do site, sempre vai estar descrito no CSS "obs: geralmente vem do setor ou alguém que desenvolva o Disign pronto"  ------ */
+/* Sistema de tamanhos - https://typescale.com/
+Fontes - Minor Third - 1.200 - Em PX
+4.4 - 5.4 - 6.4 - 7.7 - 9.2 - 11.1 - 13.3 - 16 - 19.2 - 23 - 27.6 - 33.2 - 39.8 - 47.8 - 57.3 - 68.8 - 82.6
+
+Espaçamentos - Major Third - 1.250 - Em PX
+2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16 - 20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #404040;
+  background-color: #dee1e4;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+h1 {
+  /* quanto maior o texto menor o line-height "o padrão está no body 1.4 */
+  font-size: 2.76rem;
+  line-height: 1;
+  font-weight: 600;
+  text-align: justify;
+  letter-spacing: 0.2rem; /* espaços entre as letras */
+}
+
+/* CABEÇALHO */
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: sticky;
+  z-index: 999;
+  background-color: #404040;
+  color: #f4f5f7;
+  gap: 2.1rem;
+  padding: 1.28rem 2.1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 10rem;
+}
+
+/* Menu Principal */
+ul {
+  display: flex;
+  gap: 2.1rem;
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+li a {
+  color: #f4f5f7;
+  font-weight: 500;
+  /* deixando a aparência mais leve */
+  opacity: 0.85;
+  transition: opacity 0.2s ease, text-decoration 0.2s ease;
+}
+
+li a:hover {
+  /* fica mais forte no hover */
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.sub-menu::after {
+  content: "\2BC6";
+}
+
+/* Submenu */
+.sub-menu ul {
+  display: none;
+  flex-flow: column;
+  gap: 0rem;
+  background-color: #535353;
+  border-radius: 1rem;
+  position: absolute;
+  align-items: stretch;
+  width: 20rem;
+  box-shadow: 0 0 0.8rem 0.3rem rgb(0, 0, 0, 0.15);
+  z-index: 9999;
+  transform: translate(-20%);
+}
+
+.sub-menu ul li {
+  border-bottom: solid 0.2rem #dee1e42a;
+  padding: 0.5rem 2rem;
+}
+
+.sub-menu:hover ul {
+  display: flex;
+}
+
+/* ultimo elemento da lista */
+.sub-menu ul li:last-child {
+  border-bottom: none;
+}
+
+/* -------------------------------------- */
+.banner-box {
+  width: 50rem;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  box-shadow: 0 0 0.6rem 0.2rem rgb(0, 0, 0, 0.15);
+  border-radius: 1.5rem;
+}
+
+.banner-box img {
+  width: 100%;
+}
+
+.botao-inscricao {
+  text-align: center;
+  font-size: 1.92rem;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #94aebc, #c5cacf);
+  border-right-color: #404040;
+  border-right: solid 0.3rem;
+  border-bottom: solid 0.3rem;
+  border-radius: 1rem;
+  padding: 0.52rem 2.1rem;
+}
+
+.botao-ativo:hover,
+.botao-ativo:active {
+  border: solid 0.2rem #404040;
+  background-image: none;
+  background-color: #404040;
+  color: #94aebc;
+}

@@ -1,0 +1,24 @@
+Header
+	nav	
+	 * Menu
+	   * submenu oculto - definir relevância
+	   * alteração de idioma
+Main
+	Seção eventos carrossel de três banners ultimo evento e decrescente
+	 * eventos / inscrições abertas 
+	   * link de formulário de inscrição
+	 * eventos realizados
+	   * link de fotos
+
+	Seção resultados recentes ou destaques
+	 * resultados recente de competições internacionais 
+ 	 * resultados recente de competições nacionais, regionais
+
+	Seção consulta filiação academia (posicionar em primeiro?)
+	 * numeração para consulta de filiação
+	 * link para lista de academias afiliadas
+	
+	Seção ultimas notícias
+	 * Api ligado ao facebook atulização ultima postagem
+Footer
+	Redes sociais, contatos
