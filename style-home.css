@@ -114,17 +114,51 @@ li a:hover {
   border-bottom: none;
 }
 
-/* -------------------------------------- */
+/*SEÇÃO EVENTOS */
+.secao-eventos {
+  display: flex;
+  flex-flow: column;
+  gap: 3.3rem;
+  padding: 4.88rem;
+}
+
+.carrossel-eventos {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+}
+
+.botao-eventos {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+}
+
+.container-banner {
+  display: flex;
+  justify-content: center;
+  gap: 2.1rem;
+}
+
 .banner-box {
-  width: 50rem;
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  width: 30%;
+  padding: 2rem;
   background-color: #ffffff;
-  padding: 2.5rem;
   box-shadow: 0 0 0.6rem 0.2rem rgb(0, 0, 0, 0.15);
   border-radius: 1.5rem;
 }
 
 .banner-box img {
   width: 100%;
+}
+
+.banner-box span {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
 }
 
 .botao-inscricao {
