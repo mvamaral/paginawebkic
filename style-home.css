@@ -55,6 +55,8 @@ a {
 a:link,
 a:visited {
   text-decoration: none;
+  text-decoration-color: inherit;
+  color: inherit;
 }
 
 .section {
@@ -179,6 +181,8 @@ li a:hover {
 
 /*SEÇÃO EVENTOS */
 .container-eventos {
+  display: flex;
+  justify-content: center;
   gap: 2.1rem;
 }
 
@@ -206,7 +210,6 @@ li a:hover {
 
 /* SECAO FILIE-SE */
 .box-filie {
-  max-width: 107rem;
   display: flex;
   align-items: center;
   gap: 2.7rem;
