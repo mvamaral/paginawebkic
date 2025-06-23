@@ -25,6 +25,12 @@ body {
   line-height: 1.4;
 }
 
+/* main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+} */
+
 h1 {
   /* quanto maior o texto menor o line-height "o padrão está no body 1.4 */
   font-size: 2.76rem;
@@ -79,7 +85,7 @@ a:visited {
   padding: 2.1rem;
   background-color: #ffffff;
   box-shadow: 0 0 0.6rem 0.2rem rgb(0, 0, 0, 0.15);
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .botao {
@@ -91,7 +97,7 @@ a:visited {
   border-right-color: #404040;
   border-right: solid 0.3rem;
   border-bottom: solid 0.3rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 0.52rem 2.1rem;
   cursor: pointer;
 }
@@ -156,7 +162,7 @@ li a:hover {
   flex-flow: column;
   gap: 0rem;
   background-color: #535353;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   position: absolute;
   align-items: stretch;
   width: 20rem;
@@ -193,7 +199,7 @@ li a:hover {
   width: 30%;
   background-color: #ffffff;
   box-shadow: 0 0 0.6rem 0.2rem rgb(0, 0, 0, 0.15);
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .botao-navegador {
@@ -209,10 +215,19 @@ li a:hover {
 }
 
 /* SECAO FILIE-SE */
-.box-filie {
+.box-filiese {
   display: flex;
-  align-items: center;
   gap: 2.7rem;
+  border-radius: 0.5rem;
+  padding: 2.1rem;
+  box-shadow: inset 0rem 0rem 1rem 0rem rgb(0, 0, 0, 0.15);
+}
+
+.box-filiar {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 2.7rem;
 }
 
 .filiacao {
@@ -226,5 +241,36 @@ li a:hover {
 }
 
 .botao-filiar {
-  min-width: 30rem;
+  width: 30rem;
+}
+
+.box-filiadas {
+  display: flex;
+  flex-flow: column;
+}
+
+.pesiquisa {
+  display: flex;
+  gap: 2.1rem;
+}
+
+form {
+  display: flex;
+  flex-flow: row;
+
+  gap: 2.1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:hover {
+  color: #404040;
+  border-width: 0.2rem;
+  box-shadow: 0rem 0rem 1rem 0rem #a0b5c1;
 }
