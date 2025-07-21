@@ -25,11 +25,11 @@ body {
   line-height: 1.4;
 }
 
-/* main {
+main {
   display: flex;
   flex-flow: column;
   align-items: center;
-} */
+}
 
 h1 {
   /* quanto maior o texto menor o line-height "o padrão está no body 1.4 */
@@ -70,13 +70,11 @@ a:visited {
   flex-flow: column;
   gap: 3.3rem;
   padding: 4.88rem;
+  padding-bottom: 0;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 120rem;
+  width: 115rem;
 }
 
 .box-section {
@@ -148,8 +146,9 @@ li a {
 
 li a:hover {
   /* fica mais forte no hover */
-  opacity: 1;
+  /* opacity: 1; */
   text-decoration: underline;
+  color: #ff2f01;
 }
 
 .sub-menu::after {
@@ -186,7 +185,13 @@ li a:hover {
 }
 
 /*SEÇÃO EVENTOS */
+
 .container-eventos {
+  display: flex;
+  align-items: center;
+}
+
+.container-banners {
   display: flex;
   justify-content: center;
   gap: 2.1rem;
@@ -215,7 +220,8 @@ li a:hover {
 }
 
 /* SECAO FILIE-SE */
-.box-filiese {
+/* dá pra usar na secao ultimas */
+.box-padrao {
   display: flex;
   gap: 2.7rem;
   border-radius: 0.5rem;
@@ -224,7 +230,6 @@ li a:hover {
 }
 
 .box-filiar {
-  display: flex;
   flex-flow: column;
   align-items: center;
   margin-bottom: 2.7rem;
@@ -245,19 +250,12 @@ li a:hover {
 }
 
 .box-filiadas {
-  display: flex;
   flex-flow: column;
-}
-
-.pesiquisa {
-  display: flex;
-  gap: 2.1rem;
 }
 
 form {
   display: flex;
   flex-flow: row;
-
   gap: 2.1rem;
   flex-direction: column;
   align-items: center;
@@ -273,4 +271,101 @@ input:hover {
   color: #404040;
   border-width: 0.2rem;
   box-shadow: 0rem 0rem 1rem 0rem #a0b5c1;
+}
+
+/* SEÇÃO ULTIMAS NOTÍCIAS */
+.section-ultimas {
+  padding-bottom: 4.88rem;
+}
+
+.ultimas {
+  flex-flow: column;
+}
+
+.box-ultimas {
+  justify-content: space-around;
+  flex-flow: row;
+  gap: 2.7rem;
+}
+
+/* RODAPÉ */
+footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #404040;
+  color: #f4f5f7;
+}
+
+.section-footer {
+  display: flex;
+  gap: 2.7rem;
+}
+
+.container-contatos {
+  display: flex;
+  align-items: center;
+  gap: 2.7rem;
+}
+
+.box-sigam-contatos {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.box-links {
+  display: flex;
+  gap: 2.1rem;
+}
+
+.logo-footer {
+  margin: 2.7rem;
+  width: max-content;
+}
+
+.span-footer {
+  padding: 1.5rem;
+}
+
+.a-contatos {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+svg {
+  width: 5rem;
+}
+
+.contato-whatsapp:hover {
+  color: #25d366;
+}
+
+.contato-email:hover {
+  color: #793df8;
+}
+
+.redes-youtube:hover {
+  color: #ff0033;
+}
+
+.redes-instagram:hover {
+  /* background-color: linear-gradient(46deg, #f9ce34, #ee2a7b, #6228d7); */
+  color: #ee2a7b;
+}
+
+.redes-facebook:hover {
+  color: #0866ff;
+}
+
+.strong-developer {
+  color: #ff2f01;
+  font-weight: 400;
+}
+
+.a-devolper {
+  color: #d23f1e;
 }
